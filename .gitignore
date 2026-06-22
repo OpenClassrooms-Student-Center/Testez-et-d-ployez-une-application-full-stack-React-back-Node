@@ -1,0 +1,9 @@
+/node_modules
+/coverage
+.env
+.vercel
+.DS_Store
+npm-debug.log*
+
+# IDE
+.idea/
