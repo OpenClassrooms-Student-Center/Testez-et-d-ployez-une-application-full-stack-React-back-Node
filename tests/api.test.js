@@ -24,4 +24,19 @@ describe("API 724events", () => {
     });
   });
 
+  describe("GET /api/events/:id", () => {
+    it.todo("renvoie l'événement demandé");
+    it.todo("renvoie 404 pour un identifiant inconnu ou invalide");
+  });
+
+  describe("POST /api/contact", () => {
+    it.todo("enregistre une demande valide et renvoie 201");
+    it.todo("refuse une demande invalide et détaille les erreurs");
+    it.todo("refuse un corps qui n'est pas du JSON valide");
+  });
+
+  describe("en cas d'erreur", () => {
+    it.todo("renvoie 404 au format JSON pour une route inconnue");
+    it.todo("renvoie 500 sans détail technique si le service échoue");
+  });
 });
