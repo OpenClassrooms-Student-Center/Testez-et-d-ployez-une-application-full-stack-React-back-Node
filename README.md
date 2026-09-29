@@ -6,6 +6,14 @@ API du site 724events. Elle fournit les événements affichés sur la page d'acc
 
 - Node.js >= 20.19 (version 22 recommandée, voir `.nvmrc`)
 
+## Démarrage : créer les issues du projet
+Les notes laissées par le développeur précédent sont décrites dans `.github/issues/`. Pour les retrouver dans l'onglet « Issues » de votre dépôt :
+
+1. créez votre dépôt avec le bouton **Use this template** (et non *Fork* : sur un fork, l'onglet Issues et les Actions sont désactivés) ;
+2. ouvrez l'onglet **Actions**, choisissez **Créer les issues du projet**, puis cliquez sur **Run workflow**.
+
+Relancer le workflow ne crée pas de doublon.
+
 ## Installation
 
 - `npm install`

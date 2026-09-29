@@ -1,0 +1,23 @@
+name: Créer les issues du projet
+
+# À lancer une fois, depuis l'onglet Actions, après avoir créé votre dépôt à partir du modèle :
+# Actions > « Créer les issues du projet » > Run workflow.
+# Le relancer ne crée pas de doublon.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  create-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Créer les issues décrites dans .github/issues
+        run: python3 .github/scripts/create_issues.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
